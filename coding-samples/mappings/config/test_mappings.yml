@@ -1,0 +1,46 @@
+time_offset: 600
+in_offset: 25
+active_mms:
+  mimetype: img/jpeg
+  payload: test/phpunit/fixtures/functional/myimageprofile.jpg
+  fake_mimetype: img/gif
+  fake_payload: test/phpunit/fixtures/functional/fakeimageprofile.pdf
+active_nickname:
+  - nickname6145
+  - nickname6146
+  - nickname6147
+  - nickname6148
+  - nickname6149
+  - nickname6150
+  - nickname6151
+  - nickname6152
+  - nickname6153
+  - nickname6154
+active_msisdn:
+  - 254700006145
+  - 254700006146
+  - 254700006147
+  - 254700006148
+  - 254700006149
+  - 254700006150
+  - 254700006151
+  - 254700006152
+  - 254700006153
+  - 254700006179
+reserve_nickname:
+  - nickname1006145
+  - nickname1006146
+reserve_msisdn:
+  - 254701006145
+  - 254701006146
+fake_nickname:
+  - nintendodss1002620
+  - nintendodss1002624
+fake_msisdn:
+  - 954701002620
+  - 954701002624
+active_misc:
+  - unexpectedtext1
+  - somegroupname1
+  - somecommunity1
+  - 355635635
