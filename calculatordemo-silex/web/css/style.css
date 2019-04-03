@@ -1,0 +1,2175 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url("../fonts/MyriadPro/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Regular.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-Regular.svg") format("svg");
+    /* Legacy iOS */ }
+
+/* normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; }
+
+html {
+    font-family: sans-serif;
+    /* 1 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+    margin: 0; }
+
+/* HTML5 display definitions
+	 ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    /* 1 */
+    vertical-align: baseline;
+    /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+    display: none;
+    height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+    display: none; }
+
+/* Links
+	 ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+    background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+    outline: 0; }
+
+/* Text-level semantics
+	 ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+    border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+    font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+    font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+    background: #ff0;
+    color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+    font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline; }
+
+sup {
+    top: -0.5em; }
+
+sub {
+    bottom: -0.25em; }
+
+/* Embedded content
+	 ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+    border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+    overflow: hidden; }
+
+/* Grouping content
+	 ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+    margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+    overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em; }
+
+/* Forms
+	 ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+    margin: 0;
+    /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+    overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+    text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    /* 2 */
+    cursor: pointer;
+    /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+    cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+    line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    /* 2 */
+    box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+    border: 0;
+    /* 1 */
+    padding: 0;
+    /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+    overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+    font-weight: bold; }
+
+/* Tables
+	 ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+td,
+th {
+    padding: 0; }
+
+body {
+    background: #000; }
+
+.b-container {
+    background: #fff;
+    position: relative; }
+
+.b-logo {
+    background: url("../images/icons.png") no-repeat -230px -68px;
+    width: 250px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    display: block; }
+.b-logo.m-lp_logo {
+    left: 20px;
+    top: 20px;
+    right: auto;
+    width: 190px;
+    background-position: -247px -70px; }
+
+.b-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+    background: #fff black;
+    opacity: 0;
+    transition: all 0.3s linear; }
+.b-bg.m-bg_open {
+    display: block; }
+.b-bg.m-bg_open_dark {
+    display: block;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    z-index: 50; }
+
+.clearfix:after {
+    content: ' ';
+    display: block;
+    clear: both; }
+
+.clearfix_left:after {
+    content: ' ';
+    display: block;
+    clear: left; }
+
+.b-dates {
+    margin-top: 20px; }
+
+.b-login_page {
+    background: url("../images/bg-login-page.jpg") no-repeat bottom;
+    width: 100%;
+    background-size: cover; }
+.b-login_page-logo {
+    background: url("../images/icons.png") no-repeat -10px -10px;
+    display: block;
+    height: 40px;
+    width: 225px;
+    float: right;
+    margin: 20px 18% 120px 0; }
+.b-login_page-form {
+    clear: both;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 250px; }
+.b-login_page-form_title {
+    color: #fff;
+    font: 400 30px/1 'Open Sans';
+    margin: 0 0 30px 100px;
+    text-align: left;
+    letter-spacing: 1px; }
+.b-login_page-form_error {
+    background: black;
+    border-left: 4px solid red;
+    color: #fff;
+    line-height: 50px;
+    margin: 0 0 10px 100px;
+    padding: 0 20px;
+    border-radius: 5px; }
+.b-login_page-form_field_wrapper {
+    display: block;
+    padding: 10px 0;
+    text-align: right; }
+.b-login_page-form_label {
+    color: #fff;
+    margin-right: 10px;
+    font: 600 13px/2 'Open Sans'; }
+.b-login_page-form_input {
+    border-radius: 5px;
+    border: 0;
+    width: 400px;
+    padding: 15px 5px 15px 10px; }
+.b-login_page-forgot_pass {
+    display: block;
+    text-align: right;
+    color: white; }
+.b-login_page-form_button {
+    background: #fff;
+    font: 700 16px/1 'Open Sans';
+    border-radius: 5px;
+    border: 0;
+    float: right;
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 10px 40px;
+    text-transform: capitalize;
+    transition: all .2s ease-in;
+    letter-spacing: 1px; }
+.b-login_page-form_button:hover {
+    background: #000;
+    color: #fff; }
+
+.b-nav {
+    position: absolute;
+    left: 20px;
+    top: 22px; }
+.b-nav-menu {
+    position: relative; }
+.b-nav-menu:after {
+    left: 80%;
+    top: 55px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: #3fb5c4;
+    border-width: 10px;
+    margin-top: -30px;
+    display: none;
+    z-index: 1; }
+.b-nav-hamburger {
+    background: url("../images/icons.png") no-repeat -214px -165px;
+    width: 100px;
+    height: 94px;
+    display: block;
+    position: relative;
+    z-index: 1; }
+.b-nav-hamburger.m-active_hamburger {
+    background: url("../images/icons.png") no-repeat -105px -165px; }
+.b-nav-list {
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 100px;
+    z-index: 10;
+    top: 5px;
+    border-radius: 5px;
+    background: #3fb5c4;
+    font-size: 0;
+    transition: all .3s ease-in;
+    box-shadow: 0 10px 20px #aeaeae; }
+.b-nav-item {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #379dab; }
+.b-nav-item:first-child > a {
+    border-radius: 5px 5px 0 0; }
+.b-nav-item:last-child {
+    border: 0; }
+.b-nav-item:last-child > a {
+    border-radius: 0 0 5px 5px; }
+.b-nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font: 600 16px "Open Sans";
+    padding: 20px 30px;
+    background: #3fb5c4;
+    color: #fff;
+    display: block;
+    white-space: nowrap; }
+.b-nav-link:hover {
+    color: #3fb5c4;
+    background: #fff; }
+.b-nav-new_invoice_button {
+    background: url("../images/icons.png") no-repeat -409px -165px;
+    display: block;
+    height: 94px;
+    margin-top: -20px;
+    position: relative;
+    width: 100px;
+    z-index: 10; }
+.b-nav-new_invoice_button.m-active_inv_page, .b-nav-new_invoice_button:hover {
+    background: url("../images/icons.png") no-repeat -315px -165px; }
+.b-nav-hamburger:hover {
+    background: url("../images/icons.png") no-repeat -105px -165px; }
+.b-nav-menu:hover:after {
+    display: block; }
+.b-nav-menu:hover .b-nav-hamburger {
+    background: url("../images/icons.png") no-repeat -105px -165px; }
+.b-nav-menu:hover .b-nav-list {
+    width: 200px; }
+
+.b-top_notify {
+    background: #3fb5c4;
+    display: block;
+    font: 400 30px "MyriadPro-Regular";
+    padding: 30px 10px 30px 130px;
+    position: relative;
+    color: #fff;
+    letter-spacing: 1px;
+    z-index: 1; }
+.b-top_notify-button {
+    background: url("../images/icons.png") no-repeat -4px -165px;
+    bottom: -55px;
+    color: #fff;
+    font-size: 44px;
+    margin-left: -120px;
+    line-height: 56px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 88px;
+    height: 92px; }
+.b-top_notify-button:before {
+    background: url("../images/icons.png") no-repeat -8px -115px;
+    content: " ";
+    display: block;
+    height: 32px;
+    position: absolute;
+    top: -40px;
+    width: 44px;
+    right: -25px; }
+.b-top_notify b {
+    display: block; }
+
+.b-table {
+    width: 100%; }
+.b-table-head {
+    border-bottom: 1px solid #d6d6d6;
+    color: #808080;
+    font: 700 11px "Open Sans";
+    text-align: left;
+    text-transform: uppercase; }
+.b-table-head th {
+    padding: 30px 15px 15px;
+    position: relative; }
+.b-table-head .m-id,
+.b-table-head .m-country,
+.b-table-head .m-total_amount,
+.b-table-head .m-last_invoicing,
+.b-table-head .m-invoice_nr,
+.b-table-head .m-due_date,
+.b-table-head .m-date,
+.b-table-head .m-status,
+.b-table-head .m-amount {
+    cursor: pointer; }
+.b-table-head .m-id:before,
+.b-table-head .m-country:before,
+.b-table-head .m-total_amount:before,
+.b-table-head .m-last_invoicing:before,
+.b-table-head .m-invoice_nr:before,
+.b-table-head .m-due_date:before,
+.b-table-head .m-date:before,
+.b-table-head .m-status:before,
+.b-table-head .m-amount:before {
+    content: '\25b2';
+    position: absolute;
+    right: 0px;
+    font-size: 7px;
+    top: 29px; }
+.b-table-head .m-id:after,
+.b-table-head .m-country:after,
+.b-table-head .m-total_amount:after,
+.b-table-head .m-last_invoicing:after,
+.b-table-head .m-invoice_nr:after,
+.b-table-head .m-due_date:after,
+.b-table-head .m-date:after,
+.b-table-head .m-status:after,
+.b-table-head .m-amount:after {
+    content: '\25bc';
+    position: absolute;
+    right: 0px;
+    font-size: 7px;
+    bottom: 14px; }
+.b-table-cell {
+    padding: 15px; }
+.b-table-cell.m-id {
+    width: 110px; }
+.b-table-cell.m-items {
+    width: 520px; }
+.b-table-cell.m-description {
+    width: 330px; }
+.b-table-cell.m-qty, .b-table-cell.m-imvoice_nr {
+    text-align: center; }
+.b-table-cell.m-price {
+    text-align: right; }
+.b-table-cell.m-inv_amount, .b-table-cell.m-amount {
+    text-align: right; }
+.b-table-cell.m-settings_head {
+    padding-right: 0; }
+.b-table-cell.m-settings_head .setting_icon {
+    background: url("../images/icons.png") no-repeat -6px -297px;
+    display: block;
+    height: 20px;
+    width: 20px; }
+.b-table-cell.m-settings_body {
+    padding-right: 0; }
+.b-table-cell.m-settings_body .setting_icon {
+    background: url("../images/icons.png") no-repeat -42px -297px;
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    width: 20px; }
+.b-table-cell.m-status {
+    text-transform: capitalize; }
+.b-table-cell.m-sent {
+    color: #67c43f; }
+.b-table-cell.m-draft {
+    color: #3fb5c4; }
+.b-table-cell.m-contractor_name {
+    width: 250px;
+    transition: color .2s ease-in; }
+.b-table-cell.m-country {
+    width: 180px; }
+.b-table-cell.m-total_amount {
+    width: 150px;
+    text-align: right; }
+.b-table-cell.m-last_invoicing {
+    width: 120px; }
+.b-table-cell.m-actions {
+    width: 50px;
+    text-align: center; }
+.b-table-body {
+    font: 700 13px "Open Sans"; }
+.b-table-body tr {
+    border-bottom: 1px solid #d6d6d6; }
+.b-table-body .m-country {
+    text-transform: capitalize; }
+.b-table-action_list, .b-table-action_add {
+    display: inline-block;
+    height: 16px;
+    width: 18px;
+    background: url("../images/icons.png") no-repeat -5px -630px;
+    cursor: pointer; }
+.b-table-action_add {
+    background-position-y: -660px; }
+.b-table-row.m-contractor {
+    transition: background .2s ease-in; }
+.b-table-row.m-contractor:hover {
+    background: #f5fbfc;
+    cursor: pointer; }
+.b-table-row.m-contractor:hover > .m-contractor_name {
+    color: #3fb5c4; }
+.b-table-print_invoice {
+    cursor: pointer;
+    color: #aeaeae;
+    background: url("../images/icons.png") no-repeat 0px -790px;
+    display: block;
+    height: 25px; }
+
+.b-tab {
+    position: relative; }
+.b-tab-input {
+    display: none; }
+.b-tab-input:checked + label {
+    color: #3fb5c4;
+    border-bottom: 5px solid black; }
+.b-tab-item {
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: 0 0 10px;
+    position: relative;
+    margin-right: 50px;
+    line-height: 17px; }
+.b-tab-item:hover {
+    cursor: pointer; }
+.b-tab-item.m-tab_drafts {
+    margin-right: 0; }
+.b-tab-content {
+    border-top: 1px solid #d6d6d6;
+    margin-top: -3px; }
+
+.b-top_navigation {
+    list-style: none;
+    border-bottom: 1px solid #000; }
+.b-top_navigation-item {
+    display: inline-block;
+    padding: 0 0 13px;
+    margin-right: 50px; }
+.b-top_navigation-link {
+    font: 600 16px "Open Sans";
+    color: #000;
+    text-decoration: none;
+    line-height: 1;
+    padding: 10px 0;
+    letter-spacing: 1px; }
+.b-top_navigation-link.m-active_link {
+    border-bottom: 5px solid #000; }
+
+.l-content {
+    background: #fff;
+    width: 1200px;
+    padding: 1px 0 50px 140px;
+    margin: 0 auto;
+    position: relative; }
+
+.b-seller,
+.b-customer,
+.b-details,
+.b-banking,
+.b-dashboard {
+    position: relative; }
+.b-seller-title,
+.b-customer-title,
+.b-details-title,
+.b-banking-title,
+.b-dashboard-title {
+    text-transform: uppercase;
+    padding: 30px 0 10px;
+    border-bottom: 1px solid #000;
+    font: 700 13px "Open Sans"; }
+.b-seller-title:hover,
+.b-customer-title:hover,
+.b-details-title:hover,
+.b-banking-title:hover,
+.b-dashboard-title:hover {
+    cursor: pointer; }
+.b-seller.m-close .b-seller-title:before,
+.b-customer.m-close .b-seller-title:before,
+.b-details.m-close .b-seller-title:before,
+.b-banking.m-close .b-seller-title:before,
+.b-dashboard.m-close .b-seller-title:before, .b-seller.m-close
+.b-customer-title:before,
+.b-customer.m-close
+.b-customer-title:before,
+.b-details.m-close
+.b-customer-title:before,
+.b-banking.m-close
+.b-customer-title:before,
+.b-dashboard.m-close
+.b-customer-title:before, .b-seller.m-close
+.b-details-title:before,
+.b-customer.m-close
+.b-details-title:before,
+.b-details.m-close
+.b-details-title:before,
+.b-banking.m-close
+.b-details-title:before,
+.b-dashboard.m-close
+.b-details-title:before, .b-seller.m-close
+.b-banking-title:before,
+.b-customer.m-close
+.b-banking-title:before,
+.b-details.m-close
+.b-banking-title:before,
+.b-banking.m-close
+.b-banking-title:before,
+.b-dashboard.m-close
+.b-banking-title:before, .b-seller.m-close
+.b-dashboard-title:before,
+.b-customer.m-close
+.b-dashboard-title:before,
+.b-details.m-close
+.b-dashboard-title:before,
+.b-banking.m-close
+.b-dashboard-title:before,
+.b-dashboard.m-close
+.b-dashboard-title:before {
+    background-position: -41px -268px; }
+.b-seller.m-close > .b-seller-title,
+.b-customer.m-close > .b-seller-title,
+.b-details.m-close > .b-seller-title,
+.b-banking.m-close > .b-seller-title,
+.b-dashboard.m-close > .b-seller-title, .b-seller.m-close >
+.b-customer-title,
+.b-customer.m-close >
+.b-customer-title,
+.b-details.m-close >
+.b-customer-title,
+.b-banking.m-close >
+.b-customer-title,
+.b-dashboard.m-close >
+.b-customer-title, .b-seller.m-close >
+.b-details-title,
+.b-customer.m-close >
+.b-details-title,
+.b-details.m-close >
+.b-details-title,
+.b-banking.m-close >
+.b-details-title,
+.b-dashboard.m-close >
+.b-details-title, .b-seller.m-close >
+.b-banking-title,
+.b-customer.m-close >
+.b-banking-title,
+.b-details.m-close >
+.b-banking-title,
+.b-banking.m-close >
+.b-banking-title,
+.b-dashboard.m-close >
+.b-banking-title, .b-seller.m-close >
+.b-dashboard-title,
+.b-customer.m-close >
+.b-dashboard-title,
+.b-details.m-close >
+.b-dashboard-title,
+.b-banking.m-close >
+.b-dashboard-title,
+.b-dashboard.m-close >
+.b-dashboard-title {
+    border-bottom: 1px solid #d6d6d6; }
+.b-seller-title:before,
+.b-customer-title:before,
+.b-details-title:before,
+.b-banking-title:before,
+.b-dashboard-title:before {
+    background: #fff url("../images/icons.png") no-repeat -9px -268px;
+    border: 0;
+    content: ' ';
+    height: 26px;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    width: 26px; }
+
+.b-seller-form {
+    padding: 15px 10px 0 0; }
+
+.b-seller-leftside {
+    float: left;
+    width: 330px;
+    padding-right: 30px;
+    position: relative; }
+
+.b-seller-button {
+    width: 350px; }
+.b-seller-button.f-input {
+    cursor: pointer; }
+
+.b-seller-rightside {
+    max-width: 350px;
+    text-align: right;
+    float: right; }
+
+.b-seller-selectbox {
+    width: 255px; }
+
+.b-seller-invoice_number {
+    text-align: right; }
+
+.b-seller-invoice_number, .b-seller-date_invoice, .b-seller-date_payment {
+    display: inline-block; }
+.b-seller-invoice_number .f-input,
+.b-seller-invoice_number .f-date, .b-seller-date_invoice .f-input,
+.b-seller-date_invoice .f-date, .b-seller-date_payment .f-input,
+.b-seller-date_payment .f-date {
+    width: 180px; }
+
+.b-customer-field_wrapper {
+    padding: 15px 15px 15px 0; }
+
+.b-customer .f-select {
+    width: 350px; }
+
+.b-details-new_item {
+    display: table;
+    width: 100%;
+    margin: 15px 0; }
+.b-details-new_item .f-field {
+    display: table-cell;
+    font: 400 13px "Open Sans";
+    padding-right: 10px; }
+.b-details-new_item .f-input:hover,
+.b-details-new_item .f-select:hover,
+.b-details-new_item .f-date:hover {
+    border-color: #3fb5c4; }
+
+.b-details-item_id {
+    width: 12%;
+    padding-left: 5px; }
+
+.b-details-item_name {
+    width: 50%; }
+
+.b-details-qty {
+    width: 8%; }
+
+.b-details-net_price {
+    width: 10%; }
+
+.b-details-price {
+    width: 10%; }
+
+.b-details-new_item_btn {
+    padding-right: 15px;
+    width: 32%; }
+
+.b-details-input, .b-details-select {
+    border-radius: 5px;
+    border: 1px solid #d6d6d6;
+    padding: 15px 10px;
+    width: 100%; }
+
+.b-details-select {
+    padding-right: 0; }
+
+.b-details-add_btn {
+    width: 100%;
+    padding: 15px 10px 15px 25px !important; }
+.b-details-add_btn:before {
+    position: absolute;
+    content: " ";
+    background: url("../images/icons.png") no-repeat -4px -429px;
+    width: 20px;
+    height: 20px;
+    left: 12px; }
+
+.b-details-total_wrapper {
+    text-align: right;
+    padding: 0 15px; }
+
+.b-details-total_row {
+    padding: 15px 0; }
+
+.b-details-t_title {
+    color: #808080;
+    font: 700 13px "Open Sans";
+    text-transform: uppercase;
+    width: 200px;
+    text-align: right;
+    display: inline-block; }
+
+.b-details-value {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    position: relative;
+    font: 400 16px "Open Sans"; }
+.b-details-value.m-v_total, .b-details-value.m-v_vat, .b-details-value.m-to_be_prepaid_value {
+    font-weight: 700; }
+.b-details-value > .f-select {
+    width: 90px; }
+
+.b-details-checkbox_input {
+    position: absolute;
+    opacity: 0;
+    height: 20px;
+    z-index: 10; }
+
+.b-details-checkbox_label {
+    padding-left: 25px;
+    width: 90px;
+    position: relative;
+    display: block;
+    height: 20px;
+    float: right; }
+.b-details-checkbox_label:before {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    content: " ";
+    width: 13px;
+    height: 13px;
+    border: 3px solid #67c43f;
+    z-index: 1; }
+
+.b-details-checkbox_input:checked + .b-details-checkbox_label:before {
+    background: #67c43f url("../images/icons.png") no-repeat -9px -694px;
+    content: " ";
+    color: #000;
+    text-indent: 2px; }
+
+.b-banking-content {
+    padding: 15px 15px 25px; }
+
+.b-banking .f-input {
+    width: 60%; }
+
+.b-banking .f-label {
+    min-width: 70px;
+    text-transform: capitalize; }
+
+.b-banking-iban, .b-banking-swift, .b-banking-account {
+    display: inline-block; }
+.b-banking-iban .f-input, .b-banking-swift .f-input, .b-banking-account .f-input {
+    width: 250px; }
+
+.b-banking-sort_code {
+    display: inline-block; }
+.b-banking-sort_code .f-input {
+    width: 74px;
+    text-align: center;
+    margin-right: 10px; }
+
+.b-banking-leftside {
+    float: left;
+    max-width: 40%; }
+
+.b-banking-notes {
+    float: right;
+    width: 60%; }
+.b-banking-notes .f-label {
+    display: block;
+    line-height: 3; }
+.b-banking-notes .f-textarea {
+    width: 100%;
+    max-height: 190px; }
+.b-banking-notes.m-quote_notes {
+    width: 100%; }
+
+.b-banking-agree {
+    padding-top: 10px;
+    clear: both; }
+
+.b-banking-agree_input {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    height: 20px;
+    z-index: 10; }
+
+.b-banking-agree_label {
+    color: #aeaeae;
+    font: 400 13px "Open Sans";
+    padding-left: 25px; }
+.b-banking-agree_label:before {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: " ";
+    width: 13px;
+    height: 13px;
+    border: 3px solid #67c43f;
+    z-index: 1; }
+
+.b-banking-agree_input:checked + .b-banking-agree_label {
+    color: #000; }
+.b-banking-agree_input:checked + .b-banking-agree_label:before {
+    background: #67c43f url("../images/icons.png") no-repeat -9px -694px;
+    content: " ";
+    color: #000;
+    text-indent: 2px; }
+
+.b-banking-button {
+    width: 100%;
+    border: 1px solid #595959;
+    background: #595959;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font: 700 13px "Open Sans";
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+    transition: all .2s ease-in; }
+.b-banking-button:before {
+    content: ' ';
+    position: absolute;
+    left: 10px;
+    top: 9px;
+    width: 30px;
+    height: 30px; }
+.b-banking-button.m-send {
+    background: #67c43f;
+    border-color: #67c43f; }
+.b-banking-button.m-send:before {
+    background: url("../images/icons.png") no-repeat 0 -394px; }
+.b-banking-button.m-not_active {
+    background: #262626;
+    color: #595959; }
+.b-banking-button.m-not_active.m-save_draft {
+    border-color: #595959; }
+.b-banking-button.m-not_active.m-save_draft:before {
+    background-position: -42px -361px; }
+.b-banking-button.m-not_active.m-send {
+    border-color: #595959; }
+.b-banking-button.m-not_active.m-send:before {
+    background-position: -42px -394px; }
+.b-banking-button:hover {
+    background: #5cb337; }
+
+.m-section_focus {
+    background: #f5fbfc; }
+.m-section_focus .f-select,
+.m-section_focus .f-input,
+.m-section_focus .f-custom_select,
+.m-section_focus .f-textarea {
+    background: #fff !important; }
+.m-section_focus .f-date {
+    background: #fff url("../images/icons.png") no-repeat 150px -560px; }
+
+.b-re_occurrance {
+    margin-top: 30px; }
+.b-re_occurrance-list {
+    display: inline-block; }
+.b-re_occurrance-input {
+    opacity: 0; }
+.b-re_occurrance-label {
+    position: relative;
+    margin-left: 25px;
+    transition: color .3s linear;
+    padding: 5px; }
+.b-re_occurrance-label:before {
+    position: absolute;
+    left: -22px;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #808080;
+    background: #d6d6d6;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    top: 5px; }
+.b-re_occurrance-label:hover {
+    color: #3fb5c4; }
+.b-re_occurrance-input:checked + .b-re_occurrance-label {
+    color: #3fb5c4; }
+.b-re_occurrance-input:checked + .b-re_occurrance-label:before {
+    border: 6px solid #3fb5c4;
+    background: #fff;
+    width: 6px;
+    height: 6px; }
+
+.b-contractor {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 0 5px 15px #000;
+    border-radius: 5px;
+    padding: 20px;
+    min-width: 700px;
+    display: none;
+    height: 660px;
+    z-index: 100; }
+.b-contractor-title.t-title_1 {
+    margin: 0; }
+.b-contractor-close {
+    float: right;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    font-size: 50px;
+    line-height: 35px; }
+.b-contractor-tabs {
+    padding-top: 20px; }
+.b-contractor-tabs input#billing_nav, .b-contractor-tabs input#contact_nav, .b-contractor-tabs input#summary_nav, .b-contractor-tabs input#billing_nav_1, .b-contractor-tabs input#contact_nav_1, .b-contractor-tabs input#summary_nav_1 {
+    display: none; }
+.b-contractor-tabs input#billing_nav:checked + label, .b-contractor-tabs input#contact_nav:checked + label, .b-contractor-tabs input#summary_nav:checked + label, .b-contractor-tabs input#billing_nav_1:checked + label, .b-contractor-tabs input#contact_nav_1:checked + label, .b-contractor-tabs input#summary_nav_1:checked + label {
+    color: #3fb5c4;
+    border-bottom: 5px solid black; }
+.b-contractor-nav {
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: 0 0 10px;
+    position: relative;
+    margin-right: 50px; }
+.b-contractor-nav:hover {
+    cursor: pointer; }
+.b-contractor-content {
+    display: none;
+    border-top: 1px solid #d6d6d6;
+    margin-top: -3px;
+    padding: 30px 0 10px; }
+.b-contractor-content.m-additional .f-label {
+    width: 150px; }
+.b-contractor-content.m-additional .f-input {
+    width: 200px; }
+.b-contractor-content.m-summary p {
+    font: 700 13px "Open Sans";
+    line-height: 2;
+    margin-left: 20px;
+    color: #808080; }
+.b-contractor #billing_nav:checked ~ #billing_content,
+.b-contractor #contact_nav:checked ~ #contact_content,
+.b-contractor #summary_nav:checked ~ #summary_content,
+.b-contractor #billing_nav_1:checked ~ #billing_content_1,
+.b-contractor #contact_nav_1:checked ~ #contact_content_1,
+.b-contractor #summary_nav_1:checked ~ #summary_content_1 {
+    display: block; }
+.b-contractor .f-label {
+    width: 100px; }
+.b-contractor .f-input {
+    background: #fff;
+    border: 1px solid #d6d6d6; }
+.b-contractor .f-input:focus {
+    border-color: #aeaeae; }
+.b-contractor .f-select.m-white {
+    border: 1px solid #d6d6d6; }
+.b-contractor .f-select.m-white:focus {
+    border-color: #aeaeae; }
+.b-contractor .row .f-field {
+    display: inline-block; }
+.b-contractor-email, .b-contractor-company_name {
+    min-width: 400px; }
+.b-contractor-f_name, .b-contractor-l_name {
+    min-width: 230px; }
+.b-contractor-billing_address .f-input,
+.b-contractor-billing_address .f-select, .b-contractor-country .f-input,
+.b-contractor-country .f-select {
+    min-width: 200px; }
+.b-contractor-zip_code .f-label, .b-contractor-town .f-label {
+    text-align: right;
+    padding-right: 5px; }
+.b-contractor-zip_code .f-input, .b-contractor-town .f-input {
+    min-width: 150px; }
+.b-contractor-address .f-input {
+    min-width: 450px; }
+.b-contractor-phone, .b-contractor-website {
+    width: 350px; }
+.b-contractor-button {
+    float: right;
+    width: 150px; }
+.b-contractor-leftside {
+    float: left;
+    width: 60%; }
+.b-contractor-leftside .f-label {
+    width: 140px; }
+.b-contractor-leftside .f-input {
+    width: 230px; }
+.b-contractor-rightside {
+    float: left;
+    line-height: 2;
+    margin-top: -31px;
+    width: 40%; }
+.b-contractor-rightside .f-label {
+    text-align: center;
+    width: 100%; }
+.b-contractor-logo_img {
+    width: 100%;
+    min-height: 100px; }
+.b-contractor-buttons {
+    text-align: right; }
+.b-contractor-next_button, .b-contractor-save_button {
+    width: 130px;
+    border: 1px solid #aeaeae;
+    color: #aeaeae;
+    text-align: center;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font: 700 13px "Open Sans";
+    margin-left: 10px;
+    border-radius: 5px;
+    position: relative;
+    transition: all .2s ease-in;
+    background: #fff; }
+.b-contractor-next_button.m-btn_not_active, .b-contractor-save_button.m-btn_not_active {
+    color: #aeaeae;
+    background: #fff;
+    border-color: #aeaeae; }
+.b-contractor-next_button.m-btn_not_active:hover, .b-contractor-save_button.m-btn_not_active:hover {
+    background: #fff; }
+
+.b-contractor_page-content {
+    padding: 40px 20px;
+    display: none; }
+.b-contractor_page-content .f-label {
+    width: 150px; }
+
+.b-contractor_page .row .f-field {
+    display: inline-block; }
+
+#billing_tab:checked ~ #billing_content,
+#contact_tab:checked ~ #contact_content,
+#invoice_list_tab:checked ~ #contractor_invoices_content,
+#notes_tab:checked ~ #notes_content {
+    display: block; }
+
+#contractor_invoices_content {
+    padding: 20px 0; }
+
+#notes_content textarea {
+    width: 60%;
+    min-height: 200px;
+    padding: 10px;
+    border: 1px solid #f5fbfc; }
+#notes_content textarea:focus {
+    border: 1px solid #d6d6d6; }
+
+.b-search {
+    float: right;
+    position: relative;
+    margin-top: -4px;
+    width: 250px;
+    height: 43px;
+    overflow: hidden; }
+.b-search-input {
+    height: 33px;
+    border: 0;
+    border-bottom: 5px solid;
+    outline: none;
+    padding-right: 40px;
+    transition: all .5s ease;
+    position: absolute;
+    right: -100%;
+    width: 210px;
+    top: 0; }
+.b-search-input.m-open_search {
+    right: 0; }
+.b-search-button {
+    background: #fff url("../images/icons.png") no-repeat -82px -118px;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    height: 30px;
+    width: 36px;
+    content: ' ';
+    border: 0;
+    outline: none; }
+
+@keyframes bake-pie {
+    from {
+        transform: rotate(0deg) translate3d(0, 0, 0); } }
+
+.pieID {
+    display: inline-block;
+    vertical-align: top; }
+
+.pie {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: 0 30px 0 0; }
+.pie:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 170px;
+    height: 170px;
+    background: #fff;
+    border-radius: 50%;
+    top: 15px;
+    left: 15px; }
+
+.slice {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    clip: rect(0px, 200px, 200px, 100px);
+    animation: bake-pie 1s; }
+.slice span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px); }
+
+.legend {
+    list-style-type: none; }
+.legend li {
+    width: 110px;
+    border: 0;
+    margin-bottom: 15px; }
+.legend em {
+    display: block;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #808080;
+    font: 700 11px "Open Sans"; }
+.legend span {
+    display: block;
+    width: 100%;
+    font: 400 30px "Open Sans";
+    letter-spacing: 1px; }
+
+.b-dashboard-content {
+    padding: 30px 0; }
+.b-dashboard-content.m-summary {
+    text-align: justify; }
+.b-dashboard-content.m-summary:after {
+    content: " ";
+    display: inline-block;
+    width: 100%;
+    height: 0; }
+
+.b-dashboard-sum_info {
+    float: left;
+    list-style: none; }
+.b-dashboard-sum_info li {
+    border: 0;
+    margin-bottom: 15px; }
+.b-dashboard-sum_info span {
+    display: inline-block;
+    font: 400 30px "Open Sans";
+    letter-spacing: 1px; }
+.b-dashboard-sum_info em {
+    display: block;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #808080;
+    font: 700 11px "Open Sans"; }
+.b-dashboard-sum_info .var {
+    white-space: nowrap; }
+.b-dashboard-sum_info .currency {
+    color: #6847a6;
+    display: inline-block; }
+.b-dashboard-sum_info .leftover {
+    color: #d6d6d6;
+    font-size: 26px; }
+
+.b-diagram {
+    float: left; }
+.b-diagram-list {
+    margin-right: 80px; }
+
+.b-activities {
+    list-style: none;
+    margin-top: 60px; }
+.b-activities-item {
+    font: 500 13px "Open Sans";
+    line-height: 2;
+    color: #d6d6d6;
+    padding: 10px 0;
+    border-bottom: 1px solid #808080; }
+.b-activities-status {
+    text-transform: capitalize; }
+.b-activities-status.m-new {
+    color: #3fb5c4; }
+.b-activities-status.m-sent {
+    color: #67c43f; }
+.b-activities-status.m-edited {
+    color: #6847a6; }
+.b-activities-date {
+    color: #808080;
+    font-weight: 700; }
+
+.b-quartal {
+    display: inline-block;
+    width: 24%;
+    max-width: 220px;
+    text-align: center;
+    color: #808080;
+    font: 700 13px "Open Sans"; }
+.b-quartal-title {
+    text-transform: uppercase;
+    padding: 20px 0 10px; }
+.b-quartal-cross {
+    width: 45%;
+    float: left; }
+.b-quartal-cross_graph, .b-quartal-taxes_graph {
+    width: 100%;
+    height: 150px;
+    position: relative; }
+.b-quartal-cross_graph:before, .b-quartal-taxes_graph:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: " ";
+    height: 70%;
+    width: 100%;
+    background: #3fb5c4; }
+.b-quartal-taxes {
+    width: 45%;
+    float: right; }
+.b-quartal-taxes_graph:before {
+    height: 20%;
+    background: #6847a6; }
+.b-quartal.m-quartal_1 .b-quartal-taxes_graph:before {
+    height: 10%; }
+.b-quartal.m-quartal_2 .b-quartal-cross_graph:before {
+    height: 90%; }
+.b-quartal.m-quartal_2 .b-quartal-taxes_graph:before {
+    height: 50%; }
+
+.b-footer {
+    background: #000;
+    padding: 0 20px 1px;
+    text-align: center; }
+.b-footer-content {
+    position: relative; }
+.b-footer-nav {
+    padding: 30px 0 15px; }
+@media only screen and (max-width: 800px) {
+    .b-footer-nav {
+        padding-top: 100px; } }
+.b-footer-nav_item {
+    display: inline-block;
+    margin: 0 20px; }
+@media only screen and (max-width: 480px) {
+    .b-footer-nav_item {
+        margin: 0 10px; } }
+.b-footer-nav_link {
+    color: #fff;
+    font: 600 13px/2 'Open Sans', sans-serif;
+    padding: 5px;
+    text-decoration: none;
+    transition: color .2s ease-in; }
+.b-footer-nav_link:hover {
+    color: #67c43f; }
+.b-footer-logo {
+    background: url("../images/icons.png") no-repeat -8px -65px;
+    display: block;
+    position: absolute;
+    height: 40px;
+    width: 190px;
+    right: 20px;
+    top: 25px; }
+@media only screen and (max-width: 640px) {
+    .b-footer-logo {
+        right: 50%;
+        margin-right: -95px; } }
+.b-footer-text {
+    font: 400 11px/1.5 'Open Sans', sans-serif;
+    color: #808080;
+    margin: 20px auto;
+    max-width: 800px; }
+.b-footer-copyright {
+    color: #fff;
+    display: block;
+    font: 600 13px/2 'Open Sans', sans-serif;
+    padding: 20px 0; }
+
+.l-header {
+    background: #fff;
+    box-shadow: 0px 2px 10px #000;
+    min-height: 80px;
+    padding: 15px 0;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: 100%;
+    z-index: 100; }
+
+.b-lp_nav-hamburger {
+    display: none; }
+@media only screen and (max-width: 768px) {
+    .b-lp_nav-hamburger {
+        background: url("../images/icons.png") no-repeat -375px -938px;
+        display: block;
+        float: right;
+        height: 50px;
+        width: 60px;
+        margin-right: 10px; }
+    .b-lp_nav-hamburger.m-close {
+        background-position: -430px -938px; } }
+
+@media only screen and (max-width: 768px) {
+    .b-lp_nav-list {
+        width: 100%;
+        text-align: center;
+        background: white;
+        display: none; } }
+
+.b-lp_nav-item {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: middle;
+    padding: 0 10px; }
+@media only screen and (max-width: 768px) {
+    .b-lp_nav-item {
+        padding: 0;
+        margin: 0;
+        width: 100%; }
+    .b-lp_nav-item:first-child {
+        margin-top: 20px; } }
+
+.b-lp_nav-link {
+    font: 600 16px "Open Sans";
+    padding: 10px 0 5px;
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s linear;
+    color: #000;
+    text-decoration: none; }
+.b-lp_nav-link.m-sign_in {
+    color: #3fb5c4; }
+.b-lp_nav-link.m-active, .b-lp_nav-link:hover {
+    border-color: #000; }
+@media only screen and (max-width: 768px) {
+    .b-lp_nav-link {
+        padding: 20px;
+        display: block;
+        border: 0; }
+    .b-lp_nav-link.m-active {
+        background: #67c43f;
+        color: #fff; } }
+
+.b-lp_nav-c_invoice_btn {
+    background: url("../images/icons.png") no-repeat -298px -327px;
+    height: 50px;
+    width: 190px;
+    display: block; }
+@media only screen and (max-width: 768px) {
+    .b-lp_nav-c_invoice_btn {
+        margin: 0 auto; } }
+
+.l-content_wrapper {
+    margin-top: 80px; }
+
+.l-top_banner {
+    background: #67c43f url("../images/bg-login-page.jpg") no-repeat bottom;
+    width: 100%;
+    min-height: 900px;
+    background-size: cover;
+    position: relative; }
+
+/*ANIMATIONS*/
+@-webkit-keyframes hvr-pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); }
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9); } }
+
+@keyframes hvr-pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); }
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9); } }
+
+.b-lp_banner {
+    color: #fff;
+    font: 500 20px "Open Sans"; }
+.b-lp_banner-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 0 40px;
+    text-align: center;
+    font-size: 24px;
+    font-style: italic; }
+@media only screen and (max-width: 980px) {
+    .b-lp_banner-text {
+        padding: 60px 20px 40px; } }
+.b-lp_banner-invoice_img {
+    background: url("../images/new_invoice_cut.png") no-repeat bottom;
+    height: 550px;
+    width: 100%;
+    background-size: contain;
+    position: absolute;
+    bottom: 0; }
+
+.b-lp_start_inv {
+    font: 500 20px "Open Sans";
+    margin: 0 auto;
+    position: relative;
+    width: 380px;
+    z-index: 10; }
+@media only screen and (max-width: 640px) {
+    .b-lp_start_inv {
+        width: 300px;
+        text-align: center; } }
+.b-lp_start_inv-text {
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    position: relative;
+    float: left; }
+@media only screen and (max-width: 640px) {
+    .b-lp_start_inv-text {
+        float: none;
+        font-size: 16px;
+        padding-bottom: 78px; } }
+.b-lp_start_inv-text:after {
+    content: " ";
+    display: block;
+    width: 70px;
+    height: 32px;
+    background: url("../images/icons.png") no-repeat -104px -265px;
+    position: absolute;
+    bottom: 0;
+    right: -62px; }
+@media only screen and (max-width: 640px) {
+    .b-lp_start_inv-text:after {
+        bottom: 20px;
+        left: 50px;
+        right: auto;
+        transform: rotate(60deg); } }
+.b-lp_start_inv-button {
+    float: right;
+    background: url("../images/icons.png") no-repeat -403px -401px;
+    display: block;
+    height: 94px;
+    width: 100px;
+    margin-top: -18px; }
+.b-lp_start_inv-button:hover {
+    animation: hvr-pulse 1s linear infinite; }
+.b-lp_start_inv-button:active {
+    background: url("../images/icons.png") no-repeat -302px -401px; }
+@media only screen and (max-width: 640px) {
+    .b-lp_start_inv-button {
+        float: none;
+        margin: -40px auto 0; } }
+
+.l-features {
+    width: 100%; }
+
+.b-features {
+    color: #fff; }
+.b-features-title {
+    font: 40px "MyriadPro-Regular";
+    line-height: 3;
+    text-align: center;
+    margin-bottom: 50px; }
+@media only screen and (max-width: 640px) {
+    .b-features-title {
+        font-size: 30px;
+        line-height: 1.5; } }
+.b-features-list_of_blocks {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 1000px; }
+.b-features-list_of_blocks:after {
+    content: " ";
+    display: inline-block;
+    height: 0;
+    opacity: 0;
+    width: 100%; }
+.b-features-block {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    margin-bottom: 100px;
+    text-align: center; }
+@media only screen and (max-width: 980px) {
+    .b-features-block {
+        width: 49%;
+        padding: 0 20px; } }
+@media only screen and (max-width: 640px) {
+    .b-features-block {
+        display: block;
+        width: 100%;
+        margin-bottom: 50px; } }
+.b-features-icon {
+    background: url("../images/icons.png") no-repeat -105px -358px;
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto 30px; }
+.b-features-icon.m-i_new {
+    background-position: -105px -358px; }
+.b-features-icon.m-i_send {
+    background-position: -102px -466px; }
+.b-features-icon.m-i_contractor {
+    background-position: -102px -566px; }
+.b-features-icon.m-i_builder {
+    background-position: -102px -681px; }
+.b-features-icon.m-i_history {
+    background-position: -102px -766px; }
+.b-features-icon.m-i_save {
+    background-position: -102px -872px; }
+.b-features-text {
+    font: 600 18px "Open Sans";
+    line-height: 2; }
+@media only screen and (max-width: 640px) {
+    .b-features-text {
+        max-width: 300px;
+        margin: 0 auto;
+        display: block; } }
+
+.l-about {
+    width: 100%;
+    background: #fff;
+    padding: 1px 0 60px; }
+
+.b-about {
+    margin: 0 auto;
+    max-width: 1000px; }
+.b-about-title {
+    font: 600 40px "Open Sans";
+    text-align: center; }
+.b-about-title.m-t_blue {
+    color: #3fb5c4;
+    margin: 40px; }
+.b-about-title.m-second_title {
+    margin-top: 100px; }
+@media only screen and (max-width: 480px) {
+    .b-about-title.m-second_title {
+        margin: 20px 0; } }
+@media only screen and (max-width: 640px) {
+    .b-about-title {
+        font-size: 30px;
+        margin: 20px 0; } }
+.b-about-text {
+    color: #808080;
+    font: 600 18px "Open Sans";
+    letter-spacing: 1px;
+    line-height: 1.8; }
+.b-about-text.m-italic {
+    font-style: italic; }
+@media only screen and (max-width: 1000px) {
+    .b-about-text {
+        padding: 0 20px; } }
+.b-about-linked_in {
+    color: black;
+    font-weight: 700; }
+@media only screen and (max-width: 700px) {
+    .b-about-linked_in {
+        display: block;
+        margin-top: 30px;
+        text-align: center; } }
+.b-about-linked_in:before {
+    display: inline-block;
+    content: " ";
+    height: 36px;
+    width: 50px;
+    background: url(../images/icons.png) no-repeat -9px -728px;
+    vertical-align: bottom; }
+
+.b-invoice_print .t-title_1 {
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 36px;
+    margin: 15px 0; }
+
+.b-invoice_print .uppercase {
+    text-transform: uppercase;
+    font-weight: 700; }
+
+.b-invoice_print-top_date {
+    text-align: right;
+    font-size: 18px;
+    margin-bottom: 30px;
+    float: right; }
+
+.b-invoice_print-row {
+    width: 100%;
+    clear: both;
+    margin-bottom: 15px; }
+.b-invoice_print-row.m-header {
+    margin: 30px 0;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500; }
+.b-invoice_print-row.m-footer p {
+    clear: both;
+    padding: 10px 0; }
+
+.b-invoice_print-seller_details {
+    float: left;
+    width: 50%; }
+
+.b-invoice_print-customer_details {
+    float: right;
+    max-width: 50%; }
+
+.b-invoice_print-title {
+    margin: 0;
+    padding: 10px 0; }
+
+.b-invoice_print-text {
+    padding: 10px 0 0; }
+
+.b-invoice_print-customer_details .b-invoice_print-title {
+    display: block; }
+
+.b-invoice_print-invoice_number, .b-invoice_print-date_invoice, .b-invoice_print-date_payment {
+    display: block; }
+
+.b-invoice_print-invoice_number .b-invoice_print-title,
+.b-invoice_print-date_invoice .b-invoice_print-title,
+.b-invoice_print-date_payment .b-invoice_print-title {
+    display: inline-block; }
+
+.b-invoice_print-invoice_number .b-invoice_print-text,
+.b-invoice_print-date_invoice .b-invoice_print-text,
+.b-invoice_print-date_payment .b-invoice_print-text {
+    padding-top: 0;
+    display: inline-block;
+    min-width: 130px; }
+
+.b-invoice_print .b-details-value.m-v_prepayment, .b-invoice_print .b-details-value.m-v_vat {
+    font-weight: 500; }
+
+.b-invoice_print .b-details-total_wrapper {
+    text-align: right;
+    padding: 10px 0 0; }
+
+.b-invoice_print .b-details-total_row {
+    padding: 5px; }
+
+.b-invoice_print .b-table-head th {
+    padding-top: 10px; }
+
+.b-invoice_print .l-content {
+    width: 970px;
+    padding: 0; }
+
+.b-invoice_print .b-table-cell.m-items {
+    width: 400px; }
+
+.b-invoice_print-logo {
+    background: none;
+    max-width: 200px;
+    height: 40px; }
+
+.b-invoice_print-iban, .b-invoice_print-swift, .b-invoice_print-account, .b-invoice_print-sort_code {
+    border-bottom: 1px solid #aeaeae; }
+.b-invoice_print-iban .f-label, .b-invoice_print-swift .f-label, .b-invoice_print-account .f-label, .b-invoice_print-sort_code .f-label {
+    width: 100px; }
+
+.b-invoice_print-iban .b-invoice_print .f-label,
+.b-invoice_print-swift .b-invoice_print .f-label,
+.b-invoice_print-account .b-invoice_print .f-label,
+.b-invoice_print-sort_code .b-invoice_print .f-label {
+    width: 150px; }
+
+.b-invoice_print-iban .b-invoice_print-text,
+.b-invoice_print-swift .b-invoice_print-text,
+.b-invoice_print-account .b-invoice_print-text,
+.b-invoice_print-sort_code .b-invoice_print-text {
+    display: inline-block;
+    padding: 10px 0; }
+
+.b-invoice_print-banking_details {
+    float: left;
+    width: 40%; }
+
+.b-invoice_print-notes {
+    float: right;
+    width: 58%; }
+
+.b-invoice_print-notes_text {
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #aeaeae;
+    min-height: 188px;
+    border-radius: 3px; }
+
+.b-invoice_print-bottom_msg {
+    text-align: center;
+    margin: 30px 0;
+    font-weight: 700;
+    font-size: 24px;
+    font-style: italic;
+    text-transform: uppercase; }
+
+@media print {
+    .b-invoice_print {
+        /*
+            &-table {
+                & > thead {display: table-header-group;}
+            }
+
+            &-row {
+                &.m-footer {
+                    position: fixed;
+                    bottom: -200px;
+                }
+            }
+            */ } }
+
+.f-field {
+    margin-bottom: 10px;
+    position: relative; }
+.f-field-wrapper {
+    display: inline-block; }
+
+.f-file {
+    width: 230px; }
+
+.f-label,
+.f-input,
+.f-select,
+.f-date {
+    display: inline-block; }
+
+.f-label {
+    color: #808080;
+    font: 700 13px "Open Sans"; }
+
+.f-input,
+.f-select,
+.f-textarea {
+    background: #f5fbfc;
+    border-radius: 5px;
+    border: 0;
+    font: 400 13px "Open Sans";
+    outline: none;
+    padding: 16px 10px;
+    transition: all .2s ease-in; }
+.f-input:hover, .f-input:active,
+.f-select:hover,
+.f-select:active,
+.f-textarea:hover,
+.f-textarea:active {
+    box-shadow: 0 10px 20px #aeaeae; }
+.f-input:focus,
+.f-select:focus,
+.f-textarea:focus {
+    background: #fff;
+    box-shadow: 0 10px 20px #aeaeae; }
+
+.f-date {
+    background: #f5fbfc url("../images/icons.png") no-repeat 150px -560px;
+    border-radius: 5px;
+    border: 0;
+    font: 400 13px "Open Sans";
+    outline: none;
+    padding: 16px 10px; }
+.f-date:focus, .f-date:active {
+    background: #fff url("../images/icons.png") no-repeat 150px -560px; }
+.f-date:hover {
+    box-shadow: 0 10px 20px #aeaeae; }
+
+.f-select.m-white {
+    background: #fff; }
+
+.f-required > .f-label:after {
+    content: "*";
+    color: #3fb5c4;
+    padding-left: 2px; }
+
+input[type="date"]::-webkit-inner-spin-button {
+    display: none; }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0; }
+
+.f-custom_select {
+    position: relative;
+    border: 1px solid #f5fbfc;
+    cursor: pointer;
+    padding: 0; }
+.f-custom_select:after {
+    content: '\25bc';
+    position: absolute;
+    top: 18px;
+    right: 10px; }
+.f-custom_select-active {
+    padding: 16px 10px; }
+.f-custom_select-list {
+    position: absolute;
+    top: 48px;
+    z-index: 2;
+    background: #f5fbfc;
+    left: -1px;
+    right: -1px;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #3fb5c4;
+    border-top: 0;
+    display: none;
+    box-shadow: 0 14px 20px #aeaeae; }
+.f-custom_select-items {
+    border-top: 1px solid #d6d6d6;
+    font-weight: 600; }
+.f-custom_select-item {
+    display: block;
+    padding: 8px 15px; }
+.f-custom_select-item:hover {
+    background: #3fb5c4;
+    color: #fff; }
+.f-custom_select-add_company {
+    border-top: 1px solid #d6d6d6;
+    display: block;
+    padding: 15px 15px 15px 50px;
+    color: #3fb5c4;
+    font: 700 13px 'Open Sans';
+    position: relative;
+    cursor: pointer; }
+.f-custom_select-add_company:after {
+    content: "+";
+    color: white;
+    background: #3fb5c4;
+    width: 25px;
+    height: 25px;
+    display: block;
+    text-align: center;
+    line-height: 26px;
+    font-size: 18px;
+    border-radius: 50%;
+    left: 15px;
+    position: absolute;
+    top: 12px; }
+.f-custom_select.m-select_open {
+    border: 1px solid #3fb5c4;
+    background: #fff;
+    box-shadow: 0 14px 20px #aeaeae; }
+.f-custom_select.m-select_open:after {
+    content: '\25b2';
+    color: #3fb5c4;
+    top: 14px; }
+.f-custom_select.m-select_open > .f-custom_select-list {
+    display: block;
+    border-color: #3fb5c4;
+    background: #fff; }
+
+.t-title_1 {
+    font: 30px "MyriadPro-Regular";
+    letter-spacing: 1px;
+    margin: 35px 0; }
+.t-title_1.m-t_contractor {
+    color: #d6d6d6; }
+.t-title_1.m-t_contractor span {
+    color: #000; }
+
+.button_blue {
+    border: 1px solid #3fb5c4;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font: 700 13px "Open Sans";
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+    transition: all .2s ease-in;
+    background: #3fb5c4;
+    padding: 15px 0; }
+.button_blue:hover {
+    background: #31939f; }

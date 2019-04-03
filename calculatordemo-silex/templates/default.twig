@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script type="text/javascript" src="jquery-1.7.2.min.js"></script>    
+</head>
+<body>
+<div>
+    <div> Argument1 </div>
+    <select id="argument1">
+        <option value="1" selected>1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select><br /> <br />
+
+    <div> Argument2 </div>
+    <select id="argument2">
+        <option value="1" selected>1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select><br /> <br />
+
+    <div>
+    <button id="plus">Plus</button>
+    <button id="minus">Minus</button>
+    <button id="multiplication">Multiplication</button>
+    <button id="division">Division</button>
+    </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+$("#plus").click(function(){
+    var argument1 = $("#argument1").val();
+    var argument2 = $("#argument2").val();
+    var request = $.ajax({
+        url: "/1.0/plus",
+        type: "POST",
+        data: {argument1 : argument1, argument2 : argument2},
+        dataType: "html"
+    });
+
+    request.done(function(msg) {
+        $('body').append("Request done: " + msg);
+    });
+
+    request.fail(function(jqXHR, textStatus) {
+        $('body').append("Request failed: " + textStatus);
+    });
+  });
+
+$("#minus").click(function(){
+    var argument1 = $("#argument1").val();
+    var argument2 = $("#argument2").val();
+    var request = $.ajax({
+        url: "/1.0/minus",
+        type: "POST",
+        data: {argument1 : argument1, argument2 : argument2},
+        dataType: "html"
+    });
+
+    request.done(function(msg) {
+        $('body').append("Request done: " + msg);
+    });
+
+    request.fail(function(jqXHR, textStatus) {
+        $('body').append("Request failed: " + textStatus);
+    });
+  });
+  
+$("#multiplication").click(function(){
+    var argument1 = $("#argument1").val();
+    var argument2 = $("#argument2").val();
+    var request = $.ajax({
+        url: "/1.0/multiplication",
+        type: "POST",
+        data: {argument1 : argument1, argument2 : argument2},
+        dataType: "html"
+    });
+
+    request.done(function(msg) {
+        $('body').append("Request done: " + msg);
+    });
+
+    request.fail(function(jqXHR, textStatus) {
+        $('body').append("Request failed: " + textStatus);
+    });
+  });
+  
+$("#division").click(function(){
+    var argument1 = $("#argument1").val();
+    var argument2 = $("#argument2").val();
+    var request = $.ajax({
+        url: "/1.0/division",
+        type: "POST",
+        data: {argument1 : argument1, argument2 : argument2},
+        dataType: "html"
+    });
+
+    request.done(function(msg) {
+        $('body').append("Request done: " + msg);
+    });
+
+    request.fail(function(jqXHR, textStatus) {
+        $('body').append("Request failed: " + textStatus);
+    });
+  });  
+});
+</script>
+</body>
+</html>
