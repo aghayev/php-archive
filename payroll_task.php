@@ -3,8 +3,12 @@
 /**
  *  This code flow and creates pay dates for each month in the current year.
  *
+ * Usage: 
+ * $salary = new Salary();
+ * $payrolls = $salary->getPayrolls(date('Y'));
+ * $salary->output($payrolls);
+ *
  * @author     Imran Aghayev
- * @version    SVN: $Id$
  */
 class Salary {
 
