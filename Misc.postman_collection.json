@@ -1,0 +1,36 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Misc",
+		"_postman_id": "ddd61a26-192f-b18b-f2b8-5777c3f1cbb0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Yf Currency",
+			"request": {
+				"url": "http://adsynth-ofx-quotewidget-prod.herokuapp.com/api/1",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Referer",
+						"value": "https://widget-yahoo.ofx.com/",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"method\":\"spotRateHistory\",\"data\":{\"base\":\"GBP\",\"term\":\"USD\",\"period\":\"week\"}}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
