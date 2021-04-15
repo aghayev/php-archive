@@ -1,0 +1,13 @@
+{
+  "autoload": {
+    "psr-4": {
+      "App\\": ["src/App", "tests/App"],
+      "Domain\\": ["src/Domain", "tests/Domain"],
+      "Utils\\": ["src/Utils", "tests/Utils"]
+    }
+  },
+  "require": {
+    "phpunit/phpunit": "^7",
+    "phpspec/prophecy": "~1.0"
+  }
+}
