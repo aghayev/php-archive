@@ -4,12 +4,16 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit61fda3c44cb4d6773a9007308793fb00
+class ComposerStaticInit0dd1b2b815c28013c5114ea2e86edc7d
 {
     public static $prefixLengthsPsr4 = array (
         'U' => 
         array (
             'Utils\\' => 6,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
         ),
         'M' => 
         array (
@@ -25,6 +29,10 @@ class ComposerStaticInit61fda3c44cb4d6773a9007308793fb00
         'Utils\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/Utils',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/App/Log',
         ),
         'Model\\' => 
         array (
@@ -43,18 +51,28 @@ class ComposerStaticInit61fda3c44cb4d6773a9007308793fb00
         'App\\UserAgents\\UserAgent' => __DIR__ . '/../..' . '/src/App/UserAgents/UserAgent.php',
         'App\\UserAgents\\VdContentKingUA' => __DIR__ . '/../..' . '/src/App/UserAgents/VdContentKingUA.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Model\\IO' => __DIR__ . '/../..' . '/src/Model/IO.php',
+        'Model\\Download' => __DIR__ . '/../..' . '/src/Model/Download.php',
+        'Model\\Logger' => __DIR__ . '/../..' . '/src/Model/Logger.php',
         'Model\\Products' => __DIR__ . '/../..' . '/src/Model/Products.php',
         'Model\\ResourceInterface' => __DIR__ . '/../..' . '/src/Model/ResourceInterface.php',
+        'Psr\\Log\\AbstractLogger' => __DIR__ . '/../..' . '/src/App/Log/AbstractLogger.php',
+        'Psr\\Log\\InvalidArgumentException' => __DIR__ . '/../..' . '/src/App/Log/InvalidArgumentException.php',
+        'Psr\\Log\\LogLevel' => __DIR__ . '/../..' . '/src/App/Log/LogLevel.php',
+        'Psr\\Log\\LoggerAwareInterface' => __DIR__ . '/../..' . '/src/App/Log/LoggerAwareInterface.php',
+        'Psr\\Log\\LoggerAwareTrait' => __DIR__ . '/../..' . '/src/App/Log/LoggerAwareTrait.php',
+        'Psr\\Log\\LoggerInterface' => __DIR__ . '/../..' . '/src/App/Log/LoggerInterface.php',
+        'Psr\\Log\\LoggerTrait' => __DIR__ . '/../..' . '/src/App/Log/LoggerTrait.php',
+        'Psr\\Log\\NullLogger' => __DIR__ . '/../..' . '/src/App/Log/NullLogger.php',
         'Utils\\DateTimeUtils' => __DIR__ . '/../..' . '/src/Utils/DateTimeUtils.php',
+        'Utils\\DownloadUtils' => __DIR__ . '/../..' . '/src/Utils/DownloadUtils.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit61fda3c44cb4d6773a9007308793fb00::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit61fda3c44cb4d6773a9007308793fb00::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit61fda3c44cb4d6773a9007308793fb00::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit0dd1b2b815c28013c5114ea2e86edc7d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit0dd1b2b815c28013c5114ea2e86edc7d::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit0dd1b2b815c28013c5114ea2e86edc7d::$classMap;
 
         }, null, ClassLoader::class);
     }

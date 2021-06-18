@@ -1,4 +1,4 @@
-# My Web Scraper by Imran Aghayev #
+# Varnish Inconsistencies Web Scraper by Imran Aghayev <imran.aghayev@visiondirect.co.uk> #
 
 ### Installation ###
 ```

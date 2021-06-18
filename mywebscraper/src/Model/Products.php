@@ -4,6 +4,8 @@ namespace Model;
 
 class Products implements ResourceInterface {
 
+    const CLASS_NAME = 'products';
+
     private $config;
 
     public function __construct()
@@ -19,8 +21,20 @@ class Products implements ResourceInterface {
         return $this->config->urls;
     }
 
-    public function __toString()
+    public function getDownloadFolder()
     {
-        return 'products';
+        return $this->config->download_folder;
     }
+
+    public function getIterationCount()
+    {
+        return $this->config->iteration_count;
+    }
+
+    public function getProductName($url)
+    {
+        $parsedUrl = parse_url($url);
+        return ltrim($parsedUrl['path'],'/');
+    }
+
 }

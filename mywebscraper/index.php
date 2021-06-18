@@ -6,6 +6,4 @@ use App\App;
 
 $app = new App();
 
-$output = $app->run();
-
-echo $output;
+$app->run();

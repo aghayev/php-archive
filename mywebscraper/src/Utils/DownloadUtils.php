@@ -2,15 +2,13 @@
 
 namespace Utils;
 
-use DateTime;
-
-class DateTimeUtils
+class DownloadUtils
 {
-    public static function getCurrentTS() {
+    public static function getDownloadPath($folders) {
         // Temporarily added to mimic right php.ini setup
         date_default_timezone_set('Europe/London');
 
         $date = new DateTime();
-        return $date->format('Ymd').'_'.$date->getTimestamp();
+        return $date->getTimestamp();
     }
 }
